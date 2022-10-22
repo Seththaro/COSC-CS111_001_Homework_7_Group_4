@@ -1,7 +1,7 @@
 # In a given string you should reverse every word, but the words should stay in their places.
 
 def backward_string_by_word(text):        
-    return text[::-1]
+    return ' '.join(word[::-1] for word in text.split(' '))
 
 def init():
     cont = True
