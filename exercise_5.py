@@ -4,21 +4,10 @@ def backward_string_by_word(text):
     return ' '.join(word[::-1] for word in text.split(' '))
 
 def init():
-    cont = True
-    while cont == True:
-        print("Welcome to the Text Reverser app!")
-        text = input("Please enter your word: ")
-        print(f'Your reversed text is "{backward_string_by_word(text)}"')
-        # Condition to loop the program
-        while True:
-            ans = input("Do you want to restart the application?(Yes/No): ")
-            if ans.lower() == 'yes':
-                cont = True
-                break
-            elif ans.lower() == 'no':
-                cont = False
-                break
-            else: 
-                print("Invalid Input")
+    print(backward_string_by_word(''))
+    print(backward_string_by_word('world'))
+    print(backward_string_by_word('hello world'))
+    print(backward_string_by_word('hello world'))
+
 if __name__ == '__main__':
   init()
