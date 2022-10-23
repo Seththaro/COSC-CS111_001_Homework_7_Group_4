@@ -1,11 +1,9 @@
-newlist = [1,2,3,4,5,6,7,8,9]
-
 def chunks(l, n):
-        for nums in range(0, len(l), n):
-                yield l[nums:nums + n]
+    for nums in range(0, len(l), n):
+        yield l[nums:nums + n]
 
-# n = eval(input("Enter your desired chunk: "))
-n = 3
-x = list(chunks(newlist, n))
 
-print(x)
+
+if __name__ == '__main__':
+    print(list(chunks([5, 4, 7, 3, 4, 5, 4], 3)))
+    print(list(chunks([3, 4, 5], 1)))
